@@ -47,7 +47,7 @@ class Main{
          *******************************************************************************
          */
         final int RANDOM_MIN = 1000;
-        final int RANDOM_MAX = 3999;
+        final int RANDOM_MAX = 4000;
         final int POPCORN_PRICE = 450;
         final double POPCORN_PRICE_AS_DECIMAL = POPCORN_PRICE / 100.0;
         final int SOFT_DRINK_PRICE = 100;
@@ -114,8 +114,9 @@ class Main{
          * Confirmation number generation 
          * 
          * Special Notes: In the constants section above, a RANDOM_MAX and RANDOM_MIN is 
-         * declared and assigned the values 3999 and 1000 respectively. The logic behind this
-         * is to obtain a random integer between the values of 0 and 3999. We then add 1000 to 
+         * declared and assigned the values 4000 and 1000 respectively. The logic behind this
+         * is to obtain a random integer between the values of 0 and 4000(Rand.nextInt bound is n - 1, 
+         * so we actually only generate a number up to and including 3999). We then add 1000 to
          * that random integer to be in compliance with the requirements that the value be random 
          * between 1000 and 4999. 
          * We then format the confirmation number to match the requirements of a proper confirmation number. 
